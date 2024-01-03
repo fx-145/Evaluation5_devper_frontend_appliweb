@@ -2,3 +2,22 @@
 layout: layouts/base.njk
 title: contact
 ---
+<h2>Contactez-nous</h2>
+<form method="post" name="Contact Form" data-netlify="true">
+<p>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+</p>
+<p>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+</p>
+<p>
+    <label for="comments">Comments:</label><br/>
+    <textarea name="comments" id="comments"></textarea>
+</p>
+<div data-netlify-recaptcha="true"></div>
+<p>
+    <input type="submit">
+</p>
+</form>
