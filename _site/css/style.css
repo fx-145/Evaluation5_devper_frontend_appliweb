@@ -1,0 +1,148 @@
+
+/* css de l'image et comportement responsive   */
+.image-containerz{
+    width: 100%;
+    display: block;
+    margin:0px auto;
+    position: relative;
+    cursor: pointer;
+    }
+    
+    .image-containerz img{
+      width:100%;
+      height: auto;
+      border-radius: 0px;
+    }
+    
+    .overlay1{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0px;
+    }
+    
+    /* css du texte "Charles Cantin- Photographe": centrer verticalement et horizontalement */    
+    .image-textz{
+        color:#fff;
+        font-family:cursive;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    
+    /* CSS du menu burger en mode mobile */
+        /* Sidenav menu */
+    .sidenav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: -250px;
+      background-color: #e8e8e8;
+      padding-top: 60px;
+      transition: left 0.5s ease;
+    }
+    
+    /* Sidenav menu links */
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #e65e09;
+    }
+    
+    .sidenav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    /* Active class */
+    .sidenav.active {
+      left: 0;
+    }
+    
+    /* Close btn */
+    .sidenav.close {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+    }
+    
+    /* Icône burger */
+    .burger-icon span {
+      display: none;
+      width: 35px;
+      height: 5px;
+      background-color: black;
+      margin: 6px 0;
+    }
+    
+    @media (max-width: 990px){
+      .burger-icon span {
+        display:block;
+          }
+      }
+
+
+
+       /* Css de la page galerie */
+      .padding_filters{
+        padding:20px;
+        :hover {
+          color: green;
+          font-weight: 500;
+      }
+      }
+      
+       #filters{
+        display: flex;
+        gap: 10px;
+      }
+    
+    #filters div{
+        margin-bottom: 10px;
+        border: 1px solid blue;
+        padding: 25px;
+        border-radius: 20px;
+        cursor: pointer;
+      
+    }
+    
+    #gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    
+    #gallery .active{
+        width: 30%;
+        padding: 5px;
+        transition: width .3s;
+    }
+    
+    #gallery .inactive{
+        width: 0;
+        padding: 0;
+        transition: width .3s;
+    }
+
+      
